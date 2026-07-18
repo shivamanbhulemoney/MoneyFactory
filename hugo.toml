@@ -1,0 +1,37 @@
+﻿baseURL = 'https://shivamanbhulemoney.github.io/moneyfactory'
+languageCode = 'en-us'
+title = 'MoneyFactory'
+theme = 'pehtheme-hugo'
+paginate = 6
+summaryLength = 20
+
+[params]
+  description = 'MoneyFactory - Daily money-making strategies and side hustles'
+  mainSections = 'posts'
+
+[author]
+  name = 'MoneyFactory Team'
+  bio = 'Helping you build wealth, one smart decision at a time.'
+  avatar = '/images/author.png'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 15
+  [[menu.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 20
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.116.0'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'static'
