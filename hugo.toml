@@ -12,7 +12,8 @@ mainSections = ['posts']
 [author]
 name = 'MoneyFactory Team'
 bio = 'Helping you build wealth, one smart decision at a time.'
-avatar = '/images/author.png'
+avatar = '/images/logo.png'  ← UPDATE THIS LINE
+twitter = 'https://x.com/moneyfactory_HQ'
 
 [menu]
 [[menu.main]]
