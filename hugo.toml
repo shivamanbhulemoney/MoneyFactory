@@ -7,7 +7,7 @@ summaryLength = 20
 
 [params]
 description = 'MoneyFactory - Daily money-making strategies and side hustles'
-mainSections = 'posts'
+mainSections = ['posts']
 
 [author]
 name = 'MoneyFactory Team'
