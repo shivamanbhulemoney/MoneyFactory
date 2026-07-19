@@ -6,7 +6,50 @@
 
       <a class="flex items-center group" href="{{ .Site.BaseURL }}">
         <!-- MONEYFACTORY LOGO -->
-        <img src="{{ .Site.Params.logo | relURL }}" alt="MoneyFactory News Logo" width="32" height="32" class="mr-2 group-hover:animate-spin rounded-full object-cover">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+
+  <div class="flex flex-wrap space-y-6 mb-4">
+
+    <div class="w-full md:w-3/5 flex flex-col space-y-4 md:pr-8 lg:pr-10">
+
+      <a class="flex items-center group" href="{{ .Site.BaseURL }}">
+        <!-- MONEYFACTORY LOGO -->
+        <img src="{{ .Site.Params.logo | relURL }}" alt="MoneyFactory News Logo" width="32" height="32" class="mr-2 group-hover:animate-spin rounded-lg object-contain bg-white p-0.5">
+        
+        <span class="text-2xl font-semibold uppercase">{{ .Site.Title }}</span>
+      </a>
+
+      <p class="font-semibold">
+        Breaking financial news, market analysis, and money-making strategies.<br>Your trusted source for wealth-building insights.
+      </p>
+
+      <p>MoneyFactory News delivers real-time coverage of forex markets, gold and silver prices, AI side hustles, stock trends, and passive income opportunities. Stay ahead of the market with expert analysis and actionable financial news.</p>
+
+    </div>
+
+    <div class="self-center flex flex-col w-full md:w-2/5">
+
+{{ partial "content/social-media.html" . }}
+
+    </div>
+    
+  </div>
+
+  <div class="my-8">
+    <ul class="flex items-center space-x-4">
+      {{ range .Site.Menus.main }}
+        <li><a class="decoration-auto hover:underline font-semibold" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="border-t pt-4">
+
+    <p class="text-sm">Copyright © {{ now.Year }} MoneyFactory News. All rights reserved. Built with ❤️ for informed investors worldwide.</p>
+
+  </div>
+  
+</div>
         
         <span class="text-2xl font-semibold uppercase">{{ .Site.Title }}</span>
       </a>
