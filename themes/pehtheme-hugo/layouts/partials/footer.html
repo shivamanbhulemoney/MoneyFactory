@@ -5,20 +5,9 @@
     <div class="w-full md:w-3/5 flex flex-col space-y-4 md:pr-8 lg:pr-10">
 
       <a class="flex items-center group" href="{{ .Site.BaseURL }}">
-        <!-- MONEYFACTORY LOGO - GREEN CIRCLE BADGE WITH HOVER EFFECT -->
-        <span class="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-full mr-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-green-500/30">
-          <svg width="24" height="24" viewBox="0 0 100 100" fill="white" class="drop-shadow-sm">
-            <!-- Factory Building -->
-            <path d="M10 80 L10 50 L25 40 L40 50 L55 35 L70 50 L75 20 L85 20 L90 80 Z"/>
-            <!-- Windows -->
-            <rect x="18" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
-            <rect x="38" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
-            <rect x="58" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
-            <!-- Chimney Top -->
-            <rect x="78" y="15" width="10" height="6" rx="1" fill="white"/>
-            <!-- Smoke -->
-            <path d="M75 10 Q85 0 95 5 Q100 10 90 15 Q80 20 75 10" fill="white" opacity="0.9"/>
-          </svg>
+        <!-- BIGGER GREEN FACTORY LOGO -->
+        <span class="inline-flex items-center justify-center bg-green-500 rounded-xl p-2 mr-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-green-500/40">
+          <img src="{{ .Site.Params.logo | relURL }}" alt="MoneyFactory News Logo" width="36" height="36" class="block rounded-sm object-contain">
         </span>
         
         <span class="text-2xl font-semibold uppercase">{{ .Site.Title }}</span>
