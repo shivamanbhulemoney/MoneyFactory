@@ -7,13 +7,12 @@ summaryLength = 20
 
 [params]
 description = 'MoneyFactory - Daily money-making strategies and side hustles'
-mainSections = ['posts']
+mainSections = 'posts'
 
 [author]
 name = 'MoneyFactory Team'
 bio = 'Helping you build wealth, one smart decision at a time.'
-avatar = '/images/logo.png'  ← UPDATE THIS LINE
-twitter = 'https://x.com/moneyfactory_HQ'
+avatar = '/images/logo.png'
 
 [menu]
 [[menu.main]]
