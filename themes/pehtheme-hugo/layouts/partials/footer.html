@@ -5,40 +5,30 @@
     <div class="w-full md:w-3/5 flex flex-col space-y-4 md:pr-8 lg:pr-10">
 
       <a class="flex items-center group" href="{{ .Site.BaseURL }}">
-        <!-- MONEYFACTORY LOGO - BIGGER & ANIMATED -->
-        <span class="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-xl mr-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-xl group-hover:shadow-green-500/40 ring-2 ring-green-400/20">
-          <svg width="32" height="32" viewBox="0 0 100 100" fill="none" class="drop-shadow-md">
+        <!-- MONEYFACTORY LOGO - GREEN CIRCLE BADGE WITH HOVER EFFECT -->
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-full mr-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-green-500/30">
+          <svg width="24" height="24" viewBox="0 0 100 100" fill="white" class="drop-shadow-sm">
             <!-- Factory Building -->
-            <path d="M8 82 L8 48 L24 38 L40 48 L56 32 L72 48 L78 18 L90 18 L94 82 Z" fill="white"/>
+            <path d="M10 80 L10 50 L25 40 L40 50 L55 35 L70 50 L75 20 L85 20 L90 80 Z"/>
             <!-- Windows -->
-            <rect x="16" y="54" width="14" height="12" rx="2" fill="#22c55e"/>
-            <rect x="38" y="54" width="14" height="12" rx="2" fill="#22c55e"/>
-            <rect x="60" y="54" width="14" height="12" rx="2" fill="#22c55e"/>
-            <!-- Door -->
-            <rect x="20" y="68" width="16" height="14" rx="2" fill="#22c55e"/>
-            <!-- Chimney -->
-            <rect x="76" y="10" width="14" height="10" rx="2" fill="white"/>
-            <!-- Smoke Clouds -->
-            <circle cx="82" cy="6" r="7" fill="white" opacity="0.95">
-              <animate attributeName="cy" values="6;4;6" dur="3s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.95;0.7;0.95" dur="3s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="90" cy="4" r="5" fill="white" opacity="0.8">
-              <animate attributeName="cy" values="4;2;4" dur="3s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.8;0.5;0.8" dur="3s" repeatCount="indefinite"/>
-            </circle>
+            <rect x="18" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
+            <rect x="38" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
+            <rect x="58" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
+            <!-- Chimney Top -->
+            <rect x="78" y="15" width="10" height="6" rx="1" fill="white"/>
+            <!-- Smoke -->
+            <path d="M75 10 Q85 0 95 5 Q100 10 90 15 Q80 20 75 10" fill="white" opacity="0.9"/>
           </svg>
         </span>
         
-        <span class="text-2xl font-bold uppercase tracking-tight text-gray-900 group-hover:text-green-600 transition-colors duration-300">{{ .Site.Title }}</span>
+        <span class="text-2xl font-semibold uppercase">{{ .Site.Title }}</span>
       </a>
 
-      <p class="font-semibold text-gray-700 leading-relaxed">
-        Breaking financial news, market analysis, and money-making strategies.<br>
-        <span class="text-green-600">Your trusted source for wealth-building insights.</span>
+      <p class="font-semibold">
+        Breaking financial news, market analysis, and money-making strategies.<br>Your trusted source for wealth-building insights.
       </p>
 
-      <p class="text-gray-600 leading-relaxed">MoneyFactory News delivers real-time coverage of forex markets, gold and silver prices, AI side hustles, stock trends, and passive income opportunities. Stay ahead of the market with expert analysis and actionable financial news.</p>
+      <p>MoneyFactory News delivers real-time coverage of forex markets, gold and silver prices, AI side hustles, stock trends, and passive income opportunities. Stay ahead of the market with expert analysis and actionable financial news.</p>
 
     </div>
 
@@ -51,18 +41,52 @@
   </div>
 
   <div class="my-8">
-    <ul class="flex items-center space-x-6">
+    <ul class="flex items-center space-x-4 flex-wrap gap-y-2">
       {{ range .Site.Menus.main }}
-        <li><a class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-green-500 after:transition-all after:duration-300 hover:after:w-full" href="{{ .URL }}">{{ .Name }}</a></li>
+        <li><a class="decoration-auto hover:underline font-semibold hover:text-green-600 transition-colors duration-200" href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
     </ul>
   </div>
 
-  <div class="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="border-t pt-4">
 
-    <p class="text-sm text-gray-500">© {{ now.Year }} <span class="font-semibold text-gray-700">MoneyFactory News</span>. All rights reserved.</p>
-    
-    <p class="text-sm text-gray-400 flex items-center gap-1">Built with <span class="text-red-500">❤</span> for informed investors worldwide</p>
+    <!-- Footer with Complete Green Logo -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- Left side: Copyright -->
+      <p class="text-sm text-gray-600 order-2 md:order-1">
+        Copyright © {{ now.Year }} MoneyFactory News. All rights reserved. Built with ❤️ for informed investors worldwide.
+      </p>
+      
+      <!-- Right side: Complete Green Logo -->
+      <div class="flex items-center gap-3 order-1 md:order-2">
+        <!-- Green Logo Badge -->
+        <span class="inline-flex items-center justify-center w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-md shadow-green-500/20">
+          <svg width="18" height="18" viewBox="0 0 100 100" fill="white" class="drop-shadow-sm">
+            <!-- Factory Building -->
+            <path d="M10 80 L10 50 L25 40 L40 50 L55 35 L70 50 L75 20 L85 20 L90 80 Z"/>
+            <!-- Windows -->
+            <rect x="18" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
+            <rect x="38" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
+            <rect x="58" y="55" width="12" height="10" rx="2" fill="#22c55e" stroke="white" stroke-width="1.5"/>
+            <!-- Chimney Top -->
+            <rect x="78" y="15" width="10" height="6" rx="1" fill="white"/>
+            <!-- Smoke -->
+            <path d="M75 10 Q85 0 95 5 Q100 10 90 15 Q80 20 75 10" fill="white" opacity="0.9"/>
+          </svg>
+        </span>
+        
+        <!-- Company Name -->
+        <span class="text-sm font-semibold text-gray-700">MoneyFactory News</span>
+        
+        <!-- Optional Green Divider -->
+        <span class="hidden sm:inline w-px h-6 bg-green-300"></span>
+        
+        <!-- Green Tagline -->
+        <span class="hidden sm:inline text-xs text-green-600 font-medium">💰 Wealth in sight</span>
+      </div>
+      
+    </div>
 
   </div>
   
