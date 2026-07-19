@@ -8,6 +8,11 @@ summaryLength = 20
 [params]
 description = 'MoneyFactory - Daily money-making strategies and side hustles'
 mainSections = 'posts'
+logo = '/images/logo.png'
+favicon = '/favicon.ico'
+favicon32 = '/favicon-32.png'
+favicon64 = '/favicon-64.png'
+faviconPNG = '/favicon.png'
 
 [author]
 name = 'MoneyFactory Team'
